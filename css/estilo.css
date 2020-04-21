@@ -1,0 +1,25 @@
+header{
+	padding:150px 0 30px 0;
+	background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
+}
+
+footer{
+	padding: 20px 0;
+}
+
+.navbar-default{
+	background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
+}
+
+#cursos{
+	padding:80px 0;
+}
+
+.bg-img{
+	padding:120px 0;
+	background-image: url('../img/bg_about.jpg');
+	background-size: cover !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}

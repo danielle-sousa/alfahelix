@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfahelix Treinamentos</title>
+    
+    <!--CSS Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--CSS Font Awesome-->
+    <link href="css/all.css" rel="stylesheet">
+
+    <!--CSS Outros-->
+    <link href="css/estilo.css" rel="stylesheet">
+
+    <!--FAVICON-->
+    <link rel="icon" href="img/favicon.png"> 
+    
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-default fixed-top">
+        <div class="container-fluid">
+
+            <!--LOGO-->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/new_logo.svg" style="height: 50px;">
+            </a>
+
+            <!--MENU SANDUICHE-->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--MENU-->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-md-auto text-light">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <!--Coluna Esquerda-->
+                <div class="col-lg-5 col-12 text-light jumbotron bg-transparent">
+                    <span class="btn btn-info btn-sm">À partir de R$19,99</span>
+
+                    <h1>Cursos de alta qualidade e custo baixo</h1>
+                    <p class="text-dark">Somos uma escola de computação com profissionais altamente qualificados. Promovemos cursos rápidos, práticos e de alta qualidade. Nossos profissionais possuem graduação, mestrado ou doutorado.</p>
+
+                    <a href="#cursos" class="btn btn-primary btn-lg">Conheça nossos cursos</a>
+                </div>
+
+                <!--Coluna Direita-->
+                <div class="col-lg-7 col-12">
+                    <div id="img-home" class="carousel slide" data-ride="carousel">
+                        
+                        <!--INDICADORES-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#img-home" data-slide-to="0" class="active"></li>
+                            <li data-target="#img-home" data-slide-to="1"></li>
+                            <li data-target="#img-home" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+
+                            <!--IMAGEM 01-->
+                            <div class="carousel-item active">
+                                <img class="img-fluid" src="img/01.png">
+                                <div class="carousel-caption">
+                                    <h5 class="text-dark">Seleção de cursos por R$26,99</h5>
+                                    <a href="#cursos" class="text-light">PHP | Python | MySQL</a>
+                                </div>
+                            </div>
+
+                            <!--IMAGEM 02-->
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="img/02.png">
+                                <div class="carousel-caption">
+                                    <h5 class="text-dark">O melhor da Alfa</h5>
+                                    <a href="#cursos" class="text-light">CodeIgniter: Criando websites profissionais com PHP</a>
+                                </div>
+                            </div>
+
+                            <!--IMAGEM 03-->
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="img/03.png">
+                                <div class="carousel-caption">
+                                    <h5 class="text-dark">O barato do dia por R$19,99</h5>
+                                    <a href="#cursos" class="text-light">Todo dia um curso diferente com um precinho irresistível</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--SOBRE-->
+        <div id="sobre" class="bg-img text-center text-light">
+            <h1>Sobre a Alfahelix</h1>
+        
+            <div class="container text-center">Promovemos cursos de alta qualidade com profissionais graduados, com mestrado e doutorado.</div>
+        </div>
+
+
+    <!--CURSOS-->
+    <div id="cursos" class="container">
+        <h1 class="text-center mb-5">Cursos</h1>
+
+        <div class="row">
+
+            <!--CARD 01-->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info ">GRATUITO</div>
+
+                <div class="card">
+                    <img src="img/visualizacao_python_min.jpg" class="card-img-top ">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science: Visualização de Dados
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </h5>
+                        
+                        <p class="text-muted"><i class="fas fa-play-circle"></i> 24 aulas | <i class="fas fa-clock"></i> 1 hora | <i class="fas fa-sitemap"></i> Intermediário</p>
+
+                        <p class="card-text">Aprenda a construir visualizações de dados usando a linguagem de programação Python.</p>
+
+                        <a href="#" class="btn btn-outline-info">Matricule-se Grátis!</a> 
+                    </div>
+                </div>
+            </div>
+
+            <!--CARD 02-->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">GRATUITO</div>
+
+                <div class="card">
+                    <img src="img/jquery_min.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Introdução ao framework jQuery
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </h5>
+                        
+                        <p class="text-muted"><i class="fas fa-play-circle"></i> 15 aulas | <i class="fas fa-clock"></i> 2 horas | <i class="fas fa-sitemap"></i> Iniciante</p>
+
+                        <p class="card-text">Construa suas primeiras aplicações web usando Javascript e o framework jQuery.</p>
+
+                        <a href="#" class="btn btn-outline-info">Matricule-se Grátis!</a> 
+                    </div>
+                </div>
+            </div>
+
+            <!--CARD 03-->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">GRATUITO</div>
+
+                <div class="card">
+                    <img src="img/php_min.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Introdução à criação de sites com PHP
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half text-warning"></i>
+                        </h5>
+                        
+                        <p class="text-muted"><i class="fas fa-play-circle"></i> 17 aulas | <i class="fas fa-clock"></i> 1,5 hora | <i class="fas fa-sitemap"></i> Iniciante</p>
+
+                        <p class="card-text">Aprenda a linguagem de programação PHP e comece a construir seus primeiros sites dinâmicos.</p>
+
+                        <a href="#" class="btn btn-outline-info">Matricule-se Grátis!</a> 
+                    </div>
+                </div>
+            </div>
+
+            <!--CARD 04-->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">GRATUITO</div>
+
+                <div class="card">
+                    <img src="img/css_min.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Introdução à linguagem CSS
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half text-warning"></i>
+                        </h5>
+                        
+                        <p class="text-muted"><i class="fas fa-play-circle"></i> 20 aulas | <i class="fas fa-clock"></i> 1,5 horas | <i class="fas fa-sitemap"></i> Iniciante</p>
+
+                        <p class="card-text">Aprenda os conceitos básicos da linguagem de estilos CSS e construa páginas mais elegantes.</p>
+
+                        <a href="#" class="btn btn-outline-info">Matricule-se Grátis!</a> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+     <!--CONTATO-->
+     <div id="contato" class="container">
+        <h1 class="text-center mb-5">Contato</h1>
+
+        <form class="mb-4" method="POST" id="form" action="mail/mail.php">
+            <div class="form-group">
+                <label for="nomeContato">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="emailContato">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Seu email..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefoneContato">Telefone:</label>
+                <input type="tel" class="form-control" id="tel" name="tel" maxlength="11" placeholder="Seu telefone...">
+            </div>
+
+            <div class="form-group">
+                <label for="msgContato">Mensagem:</label>
+                <textarea class="form-control" id="mensagem" rows="3" name="mensagem" required></textarea>
+            </div>
+
+            <input type="submit" value="Enviar" class="btn btn-primary btn-block">
+        </form>
+    </div>
+
+    <!--CAIXA LOGIN-->
+    <div class="modal fade" id="login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <div class="modal-title">Login</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="usuario">Usuário:</label>
+                            <input type="email" class="form-control" id="username" name="senha" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="senha">Senha:</label>
+                            <input type="password" class="form-control" id="senha" name="senha" required>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--FOOTER-->
+    <footer class="text-light bg-dark text-center">
+        <p class="lead mt-2">Desenvolvido por Danielle Sousa. Copyright 2020.</p>
+    </footer>
+
+    <!--JQuery-->
+    <script src="js/jquery.js"></script>
+    
+    <!--Bootstrap JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--CAIXA LOGIN-->
+    <script>
+        $('#login').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) 
+            var recipient = button.data('whatever') 
+            var modal = $(this)
+            modal.find('.modal-title').text('Login')
+          })
+    </script>
+</body>
+</html>
