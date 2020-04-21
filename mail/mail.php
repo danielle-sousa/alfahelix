@@ -13,7 +13,7 @@
     $body .= "\r\n Telefone: " . $userTel;
 	$body .= "\r\n Mensagem: " . $userMessage;
 
-    mail($to, $subject, $body);
+    //mail($to, $subject, $body);
 
     print 'Thanks for your message!';
     
